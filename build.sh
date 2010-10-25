@@ -5,7 +5,7 @@ function clean() {
 }
 
 function build() {
-	gcc -Wall -o notifications test-notify.c `pkg-config --libs --cflags glib-2.0 gtk+-2.0` -lnotify
+	gcc -Wall -o notifications test-notify.c `pkg-config --libs --cflags glib-2.0 gtk+-2.0 libxml-2.0` -lnotify
 }
 
 function run() {

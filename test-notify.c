@@ -49,7 +49,7 @@ void tray_icon_on_click(GtkStatusIcon *status_icon, gpointer user_data) {
 }
 
 static void destroy(GtkWidget *widget, gpointer data) {
-        gtk_main_quit ();
+        gtk_main_quit();
 }
 
 void tray_icon_on_menu(GtkStatusIcon *status_icon, guint button, guint activate_time, gpointer user_data) {
@@ -109,7 +109,7 @@ static GtkStatusIcon *create_tray_icon() {
 
 int main(int argc, char **argv) { 
         GtkStatusIcon *tray_icon;
-	char *domain_name =  "http://punetwocruise01.thoughtworks.com:8080/dashboard/cctray.xml";
+	char *domain_name =  "http://punetwocruise02.thoughtworks.com:8080/dashboard/cctray.xml";
 
         gtk_init(&argc, &argv); 
         tray_icon = create_tray_icon();
